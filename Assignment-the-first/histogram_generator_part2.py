@@ -21,7 +21,7 @@ with open(output, 'r') as f:
     plt.grid(axis='y',linestyle='--',alpha=0.5)
     plt.xlabel('Base Position')
     plt.ylabel('Mean')
-    plt.title('Distribution of Quality Scores for DNA Base Positions')
+    plt.title('Distribution of Quality Scores for Read 1')
     plt.savefig("r1.png")
     plt.close()
 
@@ -34,7 +34,7 @@ with open(output, 'r') as f:
     plt.grid(axis='y',linestyle='--',alpha=0.5)
     plt.xlabel('Base Position')
     plt.ylabel('Mean')
-    plt.title('Distribution of Quality Scores for DNA Base Positions')
+    plt.title('Distribution of Quality Scores for Index 1')
     plt.savefig("idx1.png")
     plt.close()
 
@@ -47,7 +47,7 @@ with open(output, 'r') as f:
     plt.grid(axis='y',linestyle='--',alpha=0.5)
     plt.xlabel('Base Position')
     plt.ylabel('Mean')
-    plt.title('Distribution of Quality Scores for DNA Base Positions')
+    plt.title('Distribution of Quality Scores for Index 2')
     plt.savefig("idx2.png")
     plt.close()
 
@@ -60,6 +60,6 @@ with open(output, 'r') as f:
     plt.grid(axis='y',linestyle='--',alpha=0.5)
     plt.xlabel('Base Position')
     plt.ylabel('Mean')
-    plt.title('Distribution of Quality Scores for DNA Base Positions')
+    plt.title('Distribution of Quality Scores for Read 2')
     plt.savefig("r2.png")
     plt.close()

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python 
 import bioinfo  
 import matplotlib.pyplot as plt
 import os
