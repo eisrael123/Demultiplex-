@@ -132,6 +132,8 @@ print "index hop counts: (newline)"
 for every index and value pair in index_hop_counts:
     print "<index>-<other index> = <value> (newline)"
 print "(newline)"
+
+delete any of the created files that are empty
         
         
         
