@@ -1,7 +1,9 @@
 # Assignment the First
 
 ## Part 1
-1. Be sure to upload your Python script. Provide a link to it here:
+1. Be sure to upload your Python script. Provide a link to it here:  
+   [script that generates the data](./histogram_generator_part1.py)  
+   [script that plots the data generated](histogram_generator_part2.py)
 
 | File name | label | Read length | Phred encoding |
 |---|---|---|---|
