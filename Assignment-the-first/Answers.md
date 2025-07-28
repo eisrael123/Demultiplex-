@@ -12,8 +12,12 @@
 
 2. Per-base NT distribution
     1. Use markdown to insert your 4 histograms here.
-    2. **YOUR ANSWER HERE**
+    ![read1histogram](./histograms/idx1.png)
+    ![read1histogram](./histograms/idx2.png)
+    ![read1histogram](./histograms/r1.png)
+    ![read1histogram](./histograms/r2.png)
     3. **YOUR ANSWER HERE**
+    4. **YOUR ANSWER HERE**
     
 ## Part 2
 1. Define the problem
