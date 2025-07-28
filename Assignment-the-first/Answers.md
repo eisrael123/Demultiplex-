@@ -16,8 +16,11 @@
     ![read1histogram](./histograms/idx2.png)
     ![read1histogram](./histograms/r1.png)
     ![read1histogram](./histograms/r2.png)
-    3. **YOUR ANSWER HERE**
-    4. **YOUR ANSWER HERE**
+    2. **YOUR ANSWER HERE**
+    3. 7304664 indexes
+    ```
+      echo $(( $(zcat 1294_S1_L008_R2_001.fastq.gz | sed -n '2~4p' | grep -c 'N') + $(zcat 1294_S1_L008_R3_001.fastq.gz |  sed -n '2~4p' | grep -c 'N') ))
+    ```
     
 ## Part 2
 1. Define the problem
