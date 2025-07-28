@@ -1,0 +1,43 @@
+Traceback (most recent call last):
+  File "/gpfs/projects/bgmp/ewi/bioinfo/Bi621/PS/Demultiplex-/Assignment-the-first/./histogram_generator_p1.py", line 85, in <module>
+    plt.bar(means, range(101))
+  File "/gpfs/home/ewi/miniforge3/envs/bgmp-velvet/lib/python3.11/site-packages/matplotlib/pyplot.py", line 2990, in bar
+    return gca().bar(
+           ^^^^^^^^^^
+  File "/gpfs/home/ewi/miniforge3/envs/bgmp-velvet/lib/python3.11/site-packages/matplotlib/__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "/gpfs/home/ewi/miniforge3/envs/bgmp-velvet/lib/python3.11/site-packages/matplotlib/axes/_axes.py", line 2583, in bar
+    x, height, width, y, linewidth, hatch = np.broadcast_arrays(
+                                            ^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/home/ewi/miniforge3/envs/bgmp-velvet/lib/python3.11/site-packages/numpy/lib/_stride_tricks_impl.py", line 544, in broadcast_arrays
+    shape = _broadcast_shape(*args)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/home/ewi/miniforge3/envs/bgmp-velvet/lib/python3.11/site-packages/numpy/lib/_stride_tricks_impl.py", line 419, in _broadcast_shape
+    b = np.broadcast(*args[:32])
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (8,) and arg 1 with shape (101,).
+Command exited with non-zero status 1
+	Command being timed: "./histogram_generator_p1.py"
+	User time (seconds): 26026.95
+	System time (seconds): 4.76
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 7:15:13
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 91976
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 166250
+	Voluntary context switches: 1199
+	Involuntary context switches: 6915
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
