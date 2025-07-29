@@ -50,7 +50,8 @@ initialize table called filenames
 initialize dictionary called index_matches_counts
 initialize dictionary called index_hop_counts
 initialize variable called index_unkown_counts and set to 0
-initialize variable called qual_score_cutoff and set to a value of your choosing 
+initialize variable called qual_score_cutoff_reads and set to a value of your choosing 
+initialize variable called qual_score_cutoff_indexes and set to a value of your choosing 
 
 for each index in the library:
     store "<index>_R1" in filenames
@@ -97,8 +98,9 @@ create and open all files in filenames and read every zip file:
         initialize fileR1
         initialize fileR2
 
-        if qual_score(line_4_R1) < qual_score_cutoff or qual_score(line_4_R4) < qual_score_cutoff 
-        or <index_R1> not in index_library or <index_R2> not in index_library:
+        if qual_score(line_4_R1) < qual_score_cutoff_reads or qual_score(line_4_R4) < qual_score_cutoff_reads
+        or qual_score(line4_R2) < qual_score_cutoff_indexes or qual_score(line4_R3) < qual_score_cutoff_indexes or 
+        <index_R1> not in index_library or <index_R2> not in index_library:
             set fileR1 equal to "unknown_R1"
             set fileR2 equal to "unkown_R2" 
             increment index_unkown_counts by 1
