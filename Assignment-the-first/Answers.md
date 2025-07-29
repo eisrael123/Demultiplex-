@@ -18,7 +18,7 @@
     ![read1histogram](./histograms/idx2.png)
     ![read1histogram](./histograms/r1.png)
     ![read1histogram](./histograms/r2.png)
-    2. **YOUR ANSWER HERE**
+    2. I think a quality score cutoff of 30 is good for both indexes and reads. The mean of every position of the indexes and reads never drops below 30, even in the first base positions when there are a large number of undetermined bases bringing the average down. Therefore, any sequence or index with an overall average below 30 is definitively bad. 
     3. 7304664 indexes
     ```
       echo $(( $(zcat 1294_S1_L008_R2_001.fastq.gz | sed -n '2~4p' | grep -c 'N') + $(zcat 1294_S1_L008_R3_001.fastq.gz |  sed -n '2~4p' | grep -c 'N') ))
