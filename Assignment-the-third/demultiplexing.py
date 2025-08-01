@@ -179,18 +179,33 @@ with(
         open_files[outfile_R2].write(f"{headerR2}\n{line_2_R4}\n{line_3_R4}\n{line_4_R4}\n")
 
 # Print index unknown counts
-print(f"index unknown counts = {index_unknown_counts}\n")
+print(f"index unknown counts total = {index_unknown_counts}\n")
 
 # Print index matches counts
-print("index matches counts:")
+print("index matches counts")
 for index, value in index_matches_counts.items():
     print(f"\t{index} = {value}")
+matches_total = sum(index_matches_counts.values())
+print(f"total = {matches_total}")
 print()
 
 # Print index hop counts
 print("index hop counts:")
 for index_hop, value in index_hop_counts.items():
     print(f"\t{index_hop} = {value}")
+hops_total = sum(index_hop_counts.values())
+print(f"total = {hops_total}")
+print()
+
+# Print percentages
+total = index_unknown_counts + matches_total + hops_total
+index_matches_percent = (matches_total / total) * 100
+index_hop_counts_percent = (hops_total / total) * 100
+index_unknown_percent = (index_unknown_counts / total) * 100
+print(f"% index matches: {index_matches_percent}")
+print(f"% index hops: {index_hop_counts_percent}")
+print(f"% index unknown: {index_unknown_percent}")
+
 
 
 # Close all files

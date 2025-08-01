@@ -11,7 +11,5 @@
 set -e 
 
 filepath="/projects/bgmp/shared/2017_sequencing/"
-
-echo "demultiplexer is running."
-/usr/bin/time -v ./demultiplexing.py -I $filepath
-echo "demultiplexer is complete"
+output="/projects/bgmp/ewi/bioinfo/Bi621/PS/Demultiplex-/output_demultiplex_NO_CUTOFF"
+/usr/bin/time -v ./demultiplexing.py -O $output -I $filepath --qual_score_cutoff_indexes 0 
