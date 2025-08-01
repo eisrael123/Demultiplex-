@@ -13,5 +13,5 @@ set -e
 filepath="/projects/bgmp/shared/2017_sequencing/"
 
 echo "demultiplexer is running."
-/usr/bin/time -v demultiplexing.py -I $filepath
+/usr/bin/time -v ./demultiplexing.py -I $filepath
 echo "demultiplexer is complete"

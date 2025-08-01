@@ -42,9 +42,9 @@ def qual_score(phred_score: str) -> float:
 
 def validate_base_seq(DNA: str, RNAflag: bool=False) -> bool:
     '''This function takes a string. Returns True if string is composed
-    of only As, Ts (or Us if RNAflag), Gs, Cs. False otherwise. Case insenstitive.'''
+    of only As, Ts (or Us if RNAflag), Gs, Cs, or Ns (false reads). False otherwise. Case insenstitive.'''
     DNA = DNA.upper()
-    return (DNA.count('A') + DNA.count('G') + DNA.count('C') + DNA.count('U' if RNAflag else 'T')) == len(DNA)
+    return (DNA.count('N') + DNA.count('A') + DNA.count('G') + DNA.count('C') + DNA.count('U' if RNAflag else 'T')) == len(DNA)
 
 def gc_content(DNA: str) -> float:
     '''Returns GC content of a DNA or RNA sequence as a decimal between 0 and 1.'''
