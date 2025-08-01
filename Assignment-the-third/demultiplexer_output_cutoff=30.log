@@ -25,6 +25,7 @@ index matches counts:
 	ATCATGCG = 9264615
 	TCGGATTC = 4163314
 	AGGATAGC = 8078057
+total = 305080270
 
 index hop counts:
 	GTAGCGTA-AACAGCGA = 222
@@ -579,4 +580,9 @@ index hop counts:
 	AGGATAGC-GTCCTAAG = 179
 	AGGATAGC-ATCATGCG = 350
 	AGGATAGC-TCGGATTC = 210
+total = 216286
+
+% index matches: 84.0336396708
+% index hops: 0.05957546776
+% index unknown: 15.9067851369
 
